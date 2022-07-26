@@ -248,12 +248,6 @@ class OrderedProbitCallback(LibFMLikeCallbackBase):
         )
         result = OrderedDict(
             [
-                ("log_loss", ll),
-                ("log_loss_this", ll_this),
-                ("log_loss_all_but_5", ll_all_but_5),
-                ("accuracy", accuracy),
-                ("accuracy_this", accuracy_this),
-                ("accuracy_all_but_5", accuracy_all_but_5),
                 ("rmse", rmse),
                 ("rmse_this", rmse_this),
                 ("rmse_all_but_5", rmse_all_but_5),
