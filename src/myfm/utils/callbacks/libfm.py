@@ -243,8 +243,8 @@ class OrderedProbitCallback(LibFMLikeCallbackBase):
         ll_this = self.__log_loss(prob_this)
         accuracy_this = self.__accuracy(prob_this)
         rmse_this = self.__rmse(prob_this)
-        description = "ll_mean={0:.4f}, ll_this={1:.4f}, ll_all_but_5={2:.4f}".format(
-            ll, ll_this, ll_all_but_5
+        description = "rmse={0:.4f}, rmse_this={1:.4f}, rmse_all_but_5={2:.4f}".format(
+            rmse, rmse_this, rmse_all_but_5
         )
         result = OrderedDict(
             [
